@@ -1,0 +1,34 @@
+package switchconcept;
+
+
+import java.util.Scanner;
+
+
+
+
+public class Switchconcept {
+
+
+    public static void main(String[] args) {
+     double choice;
+     System.out.println("Pick one: 1. Good morning\t 2. Good afternoon\t 3. Good evening\t");
+     Scanner s=new Scanner(System.in);
+     choice=s.nextDouble();
+     switch((int)choice)
+     {
+         case 1:
+            { 
+             System.out.println("You wished your mate good morning");
+             break;
+               }  
+         case 2: 
+{System.out.println("You wished your mate good afternoon"); 
+             break;}
+         case 3: 
+{System.out.println("You wished your mate good evening");
+             break;}
+         default:System.out.println("Invalid choice");   
+     }
+    }
+
+}
