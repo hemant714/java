@@ -1,0 +1,28 @@
+class Employee{
+
+  String name;
+ int year;
+ String address;
+  Employee(String newName,int Lyear, String Laddress)
+  {
+   name=newName;
+   year=Lyear;
+   address=Laddress;
+   };
+ }
+
+
+class Ass{
+ public static void main(String [] args)
+{
+System.out.println("Name           Year of Joining           Address");
+  Employee e1=new Employee("Robert",1994,"64C-WallsStreet");
+   System.out.println(e1.name + "       "+e1.year+ "                         " +e1.address);
+
+  Employee e2=new Employee("Sam",2000,"68D-WallsStreet");
+   System.out.println(e2.name + "           "+e2.year+ "                         " +e2.address);
+
+  Employee e3=new Employee("John",1999,"26B-WallsStreet");
+   System.out.println(e2.name + "          "+e2.year+ "                         " +e2.address);
+}
+}
